@@ -1,0 +1,84 @@
+body{
+    color: #000;
+    font-family: 'TTHoves','NanumSquare',sans-serif;
+    font-size: 14px;
+    padding-top: 64px;
+}
+/* .inner{
+    height: 64px;
+    max-width: 1920px;
+     width: 1920px;
+    padding: 0 104px 0 98px;
+    margin: 0 auto;
+} */
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 104px 0 98px;
+}
+.container{
+    overflow: hidden;
+}
+
+.control-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.control-box .btn-nav{
+    width: 33px;height: 32px;
+}
+.control-box .btn-nav.prev{
+    background-position: -187px -172px;
+}
+.control-box .btn-nav.next{
+    background-position: -113px -172px;
+
+}
+
+.control-box .btn-nav.swiper-button-disabled{
+    opacity: 0.5;
+ 
+ }
+
+
+.blind{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.header .logo a,
+.sc-notice .btn-close,
+.search-area .ic-search,
+.main-area .team-box .number::after,
+.control-box .btn-nav,
+.sc-board .apply::after,
+footer .tab-area .button::after
+{
+    background: url(../imges/icon/sp_pc.png) no-repeat;
+    background-size: 328px 205px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* *1024을 기준으로 화면을 보고 잡아야함 */
+    .header .logo a,
+    .header .btn-menu
+    {
+        background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        background-size: 195px 181px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /* *768을보고 잡아야함 */
+  
+}
+
+@media screen and (max-width: 767px) {
+    /* *320을 보고 잡아야함 */
+  
+}
