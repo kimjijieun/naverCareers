@@ -25,7 +25,7 @@
     font-weight: bold;
     color: #fff;
 
-    animation: rolling 10s linear infinite;
+    animation: rolling 20s linear infinite;
 }
 /* 왜 안없어짐..? */
 
@@ -36,7 +36,8 @@
 }
 
 
-.sc-notice .notice-box p{
+.sc-notice .notice-box strong::before{
+    content: '';
     background: url(../imges/logo/img_bannerlogo.png) no-repeat;
     vertical-align: middle;
 
@@ -117,7 +118,7 @@
 }
 .search-area .search-wrap input{
     border: none;
-    width: 80%;
+    width: 65%;
     /* color: #dae8ff; */
     letter-spacing: -1.4px;
     font-weight: 700;
@@ -128,24 +129,32 @@
     height: 40px; */
 }
 .search-area .search-list select{
-    width: 80%;
+    width: 70%;
     color: grey;
 }
 .search-area .search-list option{
     color: #000;
 }
+.search-area .search-list .ic-title::before{
+    content: '';
+    display: inline-block;
+    margin: 0 28px 0 21px;
+    background-position: -245px -40px;
+    width: 18px;
+    height: 18px;
+}
 .search-area .ic-title{
     font-weight: 700;
     background-repeat: 9px;
 }
-.search-area .ic-search{
-    /* display: block; */
+/* .search-area .ic-search{
+    display: block;
     margin: 0 28px 0 21px;
     background-position: -245px -40px;
     width: 18px;
     height: 18px;
     background-size: 328px 205px;
-}
+} */
 .search-area select{
     border: none;
 }
@@ -201,6 +210,7 @@
 
 .link-more{
     /* position: relative; */
+    display: inline-block;
     border-bottom: 1px solid;
     vertical-align: top;
     font-size: 14px;

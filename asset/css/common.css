@@ -52,7 +52,7 @@ body{
 
 .header .logo a,
 .sc-notice .btn-close,
-.search-area .ic-search,
+.search-area .search-list .ic-title::before,
 .main-area .team-box .number::after,
 .control-box .btn-nav,
 .sc-board .apply::after,
@@ -61,6 +61,15 @@ footer .tab-area .button::after
     background: url(../imges/icon/sp_pc.png) no-repeat;
     background-size: 328px 205px;
 }
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1200px) {
