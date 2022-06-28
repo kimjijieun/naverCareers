@@ -28,7 +28,6 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-
 }
 .header .logo a{
     display: block;
@@ -168,6 +167,7 @@ footer .tab-area .button{
 }
 footer .tab-area.active .button{
     background: #fff;
+    padding: 0 12px;
 }
 footer .tab-area .button::after{ /* 화살표 안나옴 */
     content: '';
@@ -195,6 +195,7 @@ footer .tab-area.active .button::after{
 .tab-area .tab-item{
     font-size: 18px;
     padding: 0 12px;
+    line-height: 42px;
 
 }
 .tab-area .tab-list{
@@ -217,6 +218,14 @@ footer .tab-area.active .button::after{
     background-color: #f2f2f2;
 }
 
+.header .mgnb-area{
+    display: none;
+}
+
+
+
+
+/* 반응형 */
 
 @media screen and (max-width: 1100px) {
     /* *1024을 기준으로 화면을 보고 잡아야함 */
@@ -235,6 +244,7 @@ footer .tab-area.active .button::after{
 
     .menu-list,.header .util-area{display: none;}
     .header .logo a{
+        /* display: block; */
         width: 160px;height: 23px;
         background-position: 0 0;
     }
@@ -244,8 +254,116 @@ footer .tab-area.active .button::after{
         background-position: -85px -28px;
         width: 20px;
         height: 14px;
+        /* display: none; */
     }
+    
+    .header .btn-menu.btn-close{
+        background-position: -85px -49px;
+        width: 15px;
+        height: 15px;
+        display: none;
+    }
+    /* 자바 */
+    .header .btn-menu.active{
+        display: none;
+    }
+    .header .btn-menu.active.btn-close{
+        display: block;
+    }
+
+
+    .header .mgnb-area{
+        position: fixed;
+        top: 60px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background-color: #fff;
+        font-size: 14px;
+        transform: translateX(100%);
+
+        transition: all 0.3s ease-in-out;
+    }
+    /* 자바 */
+    .header .mgnb-area.active{
+        transform: translateX(0);
+
+    }
+    .header .m-menu-list{
+        font-size: 22px;
+        line-height: 46px;
+        letter-spacing: -0.44px;
+        padding: 11px 0 9px;
+    }
+    
+
+    .header .m-link-menu{
+        display: block;
+        padding: 0 22px;
+
+    }
+    .header .m-menu-item .m-link-menu1::after{
+        content: '';
+        vertical-align: top;
+        display: inline-block;
+        margin: 20px 0 0 4px;
+        background-position: -136px -49px;
+        width: 10px;
+        height: 6px;
+    }
+    /* 자바 */
+    .header .m-menu-item.active .m-link-menu1::after{
+        transform: rotate(-180deg);
+    }
+    .header .m-menu-item.active .m-link-menu1{
+        background-color: #f2f2f2;
+    }
+
+
+    .header .m-sub-list{
+        display: none;
+        padding: 3px 22px 15px;
+    }
+    .header .m-sub-list.active{
+        display: block;
+
+    }
+    
+    .header .m-sub-item{
+        margin-top: 13px;
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.36px;
+    }
+
+    .header .m-util-area{
+        font-size: 22px;
+        line-height: 46px;
+        letter-spacing: -0.44px;
+        padding: 10px 0 11px;
+        
+    }
+    .header .m-util-area::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        padding: 0 22px;
+        background-color: #d0d0d0;
+    }
+
+
+
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 1023px) {
     /* *768을보고 잡아야함 */

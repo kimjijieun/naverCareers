@@ -17,7 +17,7 @@ $(function(){
         $('.sub-list').removeClass('active')
     })
 
-    // 버튼 클릭시 관련사이트 나오기
+    // 푸터 버튼 클릭시 관련사이트 나오기
     $('.tab-area .button').click(function(){
         $('.tab-area').toggleClass('active');
     });
@@ -76,4 +76,18 @@ $(function(){
     });
 
 
+
+    // w1100
+
+    $('.gnb-area .btn-menu').click(function(){
+        $('.btn-menu').addClass('btn-close')
+        $('.mgnb-area').addClass('active')
+    })
+
+
+    //사이드 메뉴
+    $('.mgnb-area .m-link-menu1').click(function(e){
+        e.preventDefault();
+        $('.m-menu-item, .m-sub-list').toggleClass('active')
+    })
 });

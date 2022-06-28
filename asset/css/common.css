@@ -23,6 +23,7 @@ body{
 .control-box{
     display: flex;
     justify-content: flex-end;
+    margin-top: 44px;
 }
 .control-box .btn-nav{
     width: 33px;height: 32px;
@@ -32,6 +33,7 @@ body{
 }
 .control-box .btn-nav.next{
     background-position: -113px -172px;
+    margin-left: 8px;
 
 }
 
@@ -53,13 +55,13 @@ body{
 .header .logo a,
 .sc-notice .btn-close,
 .search-area .search-list .ic-title::before,
-.main-area .team-box .number::after,
+.container .team-box .number::after,
 .control-box .btn-nav,
 .sc-board .apply::after,
 footer .tab-area .button::after
 {
     background: url(../imges/icon/sp_pc.png) no-repeat;
-    background-size: 328px 205px;
+    background-size: 328px 205px; /* 2배 줄인 사이즈 */
 }
 
 
@@ -72,12 +74,15 @@ footer .tab-area .button::after
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     /* *1024을 기준으로 화면을 보고 잡아야함 */
     .header .logo a,
-    .header .btn-menu
+    .header .btn-menu,
+    .header .btn-menu.btn-close,
+    .header .m-link-menu::after
     {
-        background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        /* background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png); */
+        background: url(../imges/icon/sp_mo.png);
         background-size: 195px 181px;
     }
 }

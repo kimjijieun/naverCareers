@@ -124,12 +124,19 @@
     font-weight: 700;
 }
 .search-area .search-wrap .search-list{
+    display: flex;
     flex: 1;
     /* width: 100%;
     height: 40px; */
 }
 .search-area .search-list select{
-    width: 70%;
+    /* width: 70%; */
+    flex: 1;
+    color: grey;
+}
+.search-area .search-list text{
+    /* width: 70%; */
+    flex: 1;
     color: grey;
 }
 .search-area .search-list option{
@@ -144,8 +151,15 @@
     height: 18px;
 }
 .search-area .ic-title{
+    flex: 1;
     font-weight: 700;
     background-repeat: 9px;
+}
+.search-area .search-list #crop{
+    flex: 1;
+}
+.search-area .search-list #job{
+    flex: 1;
 }
 /* .search-area .ic-search{
     display: block;
@@ -160,17 +174,6 @@
 }
 
 
-
-/* main-area */
-.main-area{
-    background-color: #fafafa;
-}
-.main-area .sc-teams{
-    padding-top: 126px;
-}
-.main-area .inner1{
-    padding: 0 104px;
-}
 
 
 
@@ -190,13 +193,24 @@
 
 
 
+
 /* main-area */
+
+/* sc-teams */
+.container .sc-teams{
+    padding-top: 126px;
+    padding-bottom: 89px;
+    background-color: #fafafa;
+}
+.container .title-wrap{
+    margin-bottom: 70px;
+}
 .container .main-title{
     font-size: 64px;
     line-height: 71px;
     letter-spacing: -0.64px;
     margin-bottom: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .container .mid-title{
     display: inline-block;
@@ -217,27 +231,34 @@
     letter-spacing: -0.36px;
 }
 
-.main-area .team-list{
+.container .team-list{
     margin-top: 70px;
 
 }
-.main-area .team-box{
+.container .team-box{
     display: block;
     width: 100%;
 }
-.main-area .team-box:hover{
+.container .team-box:hover{
     background-color: #ebebeb;
 }
-.main-area .team-box .inner1{
-    padding: 20px 0;
+.container .team-box .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 104px 20px 98px;
 }
-.main-area .team-box .item-title{
+
+.container .team-box .item-title{
     width: 50%;
     font-size: 38px;
     letter-spacing: -0.34px;
     display: inline-block;
 }
-.main-area .team-box .number{
+.container .team-box .title{
+    display: inline-block;
+}
+.container .team-box .number{
     position: relative;
     /* margin-top: 13px; */
     margin-left: 18px;
@@ -246,27 +267,24 @@
     
     vertical-align: top;
 }
-.main-area .team-box .number::after{
+.container .team-box .number::after{
     content: '';
     position: absolute;
     top: -1px;
     right: -14px;
     background-position: -176px -105px;
-    background-size: 328px 205px;
+    /* background-size: 328px 205px; */
     width: 9px;
     height: 9px;
 }
-.main-area .team-box .desc{
+.container .team-box .desc{
     width: 50%;
 
     padding: 20px 0 20px 15px;
     font-size: 22px;
     letter-spacing: -0.44px;
 }
-.team-list .inner1{
-    display: flex;
-    align-items: center;
-}
+
 
 
 
@@ -275,11 +293,13 @@
     margin-top: 95px;
     /* overflow: hidden; */
 }
-.sc-people .inner1{
+
+.container .sc-people .title-wrap{
+    margin-bottom: 60px;
 }
 .sc-people .midslide{
     position: relative;
-    padding: 60px 0 145px 0;
+    padding: 0 0 145px 0;
     overflow: initial;
 }
 .sc-people .midslide .slide-wrap{
@@ -287,7 +307,7 @@
     /* height: 520px; */
 }
 .sc-people .slide-box{
-    display: block;
+    /* display: block; */ /* @@@@왜 블럭줬는데 안먹지 */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -413,7 +433,7 @@
     display: inline-block;
     margin-left: 11px;
     background-position: -76px -172px;
-    background-size: 328px 205px;
+    /* background-size: 328px 205px; */
     width: 32px;
     height: 32px;
     vertical-align: middle;
