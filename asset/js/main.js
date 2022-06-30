@@ -80,9 +80,28 @@ $(function(){
     // w1100
 
     $('.gnb-area .btn-menu').click(function(){
-        $('.btn-menu').addClass('btn-close')
-        $('.mgnb-area').addClass('active')
+        // $('.btn-menu').addClass('btn-close')
+        // $('.mgnb-area').addClass('active')
+        $('.btn-menu').toggleClass('btn-close')
+        $('.mgnb-area').toggleClass('active')
+
+        // if ('btn-menu'.css('display') == 'none') {
+        //     $('.btn-menu').addClass('btn-close')
+        // }
     })
+    // $('.gnb-area .btn-close').click(function(){
+    //     $('.btn-menu').removeClass('btn-close')
+    //     $('.mgnb-area').removeClass('active')
+    // })
+
+    // $('.gnb-area .btn-menu').click(function(){
+    //     $('.btn-menu').removeClass('btn-close')
+    //     $('.mgnb-area').removeClass('active')
+
+    //     if ('btn-close'.css('display') == 'block') {
+    //         $('.btn-close').removeClass('btn-close')
+    //     }
+    // })
 
 
     //사이드 메뉴

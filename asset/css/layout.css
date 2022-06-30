@@ -219,7 +219,7 @@ footer .tab-area.active .button::after{
 }
 
 .header .mgnb-area{
-    display: none;
+    /* display: none; */
 }
 
 
@@ -261,7 +261,7 @@ footer .tab-area.active .button::after{
         background-position: -85px -49px;
         width: 15px;
         height: 15px;
-        display: none;
+        /* display: none; */
     }
     /* 자바 */
     .header .btn-menu.active{
