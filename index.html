@@ -36,18 +36,18 @@
                     <li class="menu-item"><a href="" class="link-menu">Culture</a></li>
                     <li class="menu-item"><a href="" class="link-menu">Value</a></li>
                 </ul>
-                <ul class="util-area">
+                <div class="util-area">
                     <!-- a태그만 util-area -->
                     <a href="" class="link-util">Jobs</a>
                     <a href="" class="link-util">Login</a>
                     <a href="" class="link-util">FAQ</a>
-                </ul>
+                </div>
                 <button class="btn-menu"><span class="blind">메뉴</span></button>
             </nav>
 
             
             <nav class="mgnb-area">
-
+                <!-- 모바일영역 -->
                 <ul class="m-menu-list">
                     <li class="m-menu-item">
                         <a href="" class="m-link-menu m-link-menu1">Teams</a>
@@ -65,11 +65,11 @@
                     <li class="m-menu-item"><a href="" class="m-link-menu">Culture</a></li>
                     <li class="m-menu-item"><a href="" class="m-link-menu">Value</a></li>
                 </ul>
-                <ul class="m-util-area">
+                <div class="m-util-area">
                     <a href="" class="m-link-menu">Jobs</a>
                     <a href="" class="m-link-menu">Login</a>
                     <a href="" class="m-link-menu">FAQ</a>
-                </ul>
+                </div>
 
             </nav>
         </div>
@@ -95,7 +95,7 @@
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
                         <div class="video-box">
-                            <video muted autoplay loop>
+                            <video muted autoplay loop playsinline poster="./asset/imges/contents/joker.png">
                                 <source src="https://recruit.pstatic.net/share/tmplat/naver/video/Joker.mp4"
                                     type="video/mp4">
                             </video>
@@ -104,7 +104,7 @@
                     </li>
                     <li class="swiper-slide">
                         <div class="video-box">
-                            <video muted autoplay loop>
+                            <video muted autoplay loop playsinline poster="./asset/imges/contents/pau.png">
                                 <source src="https://recruit.pstatic.net/share/tmplat/naver/video/Paukova.mp4"
                                     type="video/mp4">
                             </video>
@@ -113,7 +113,7 @@
                     </li>
                     <li class="swiper-slide">
                         <div class="video-box">
-                            <video muted autoplay loop>
+                            <video muted autoplay loop playsinline poster="./asset/imges/contents/bram.png">
                                 <source src="https://recruit.pstatic.net/share/tmplat/naver/video/Bram.mp4"
                                     type="video/mp4">
                             </video>
@@ -122,7 +122,7 @@
                     </li>
                     <li class="swiper-slide">
                         <div class="video-box">
-                            <video muted autoplay loop>
+                            <video muted autoplay loop playsinline poster="./asset/imges/contents/yann.png">
                                 <source src="https://recruit.pstatic.net/share/tmplat/naver/video/Yann_Bastard.mp4"
                                     type="video/mp4">
                             </video>
@@ -134,12 +134,12 @@
         </section>
         <section class="search-area">
             <h2 class="blind">검색영역</h2>
-            <div class="inner">
+            <div class="search-wrap">
                 <form action="" method="get"> <!-- form태그는 두고 안에만 추가 -->
                     <fieldset>
                         <legend class="blind">인재검색</legend>
 
-                        <div class="search-wrap">
+                        <div class="search-box">
                             <!-- <span class="ic-search"></span> -->
                             <div class="search-list">
                                 <label for="keyword" class="ic-title">키워드</label>
