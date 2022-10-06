@@ -4,26 +4,26 @@
     height: 64px;
 }
 .sc-notice .inner{
+    position: relative;
+    padding: 10px 114px 10px 98px;
+    background-color: #088eff;
     max-width: 1920px;
-    box-sizing: border-box;
-    /* overflow: hidden; */
+    text-align: right;
 }
 .sc-notice .wrap{
     position: relative;
+    height: 44px;
+    line-height: 44px;
+    margin-right: 30px;
+    font-size: 17px;
+    letter-spacing: -0.10px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
     overflow: hidden;
 }
 .sc-notice .notice-box{
     display: block;
-    text-align: right;
-    width: 100%;
-    height: 44px;
-    padding: 10px 114px 10px 98px;
-
-    font-size: 17px;
-    line-height: 44px;
-    letter-spacing: -0.10px;
-    font-weight: bold;
-    color: #fff;
 
     animation: rolling 20s linear infinite;
 }
@@ -58,6 +58,7 @@
     top:50%;
     right: 10px;
     transform: translateY(-50%);
+    right: 114px;
 }
 /* .sc-notice .close a{
     display: block;
@@ -119,6 +120,48 @@
     background-color: #fff;
     padding-bottom: 0;
 }
+.search-area fieldset{
+    display: flex;
+}
+.search-area .ic-search{
+    display: flex;
+    align-items: center;
+    padding: 0 28px 0 21px;
+}
+.search-area .ic-search::after{
+    content: '';
+    display: block;
+    background-position: -245px -40px;
+    width: 18px;
+    height: 18px;
+}
+.search-area .keyword-search{
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    align-items: center;
+    font-weight: bold;
+}
+.search-area .ic-title{
+    margin-right: 9px;
+    white-space: nowrap;
+    color: #000;
+}
+.search-area .keyword-search input{
+    flex: 1;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 54px;
+    font-family: 'TTHoves', 'NanumSquare', sans-serif;
+    border: none;
+}
+.search-area .select-box{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
 
 .search-area .search-box{
     display: flex;
@@ -153,7 +196,7 @@
 .search-area .search-list option{
     color: #000;
 }
-.search-area .search-list .ic-title::before{
+/* .search-area .search-list .ic-title::before{
     content: '';
     display: inline-block;
     margin: 0 28px 0 21px;
@@ -171,7 +214,7 @@
 }
 .search-area .search-list #job{
     flex: 1;
-}
+} */
 /* .search-area .ic-search{
     display: block;
     margin: 0 28px 0 21px;

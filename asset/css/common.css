@@ -54,7 +54,7 @@ body{
 
 .header .logo a,
 .sc-notice .btn-close,
-.search-area .search-list .ic-title::before,
+.search-area .ic-search::after,
 .container .team-box .number::after,
 .control-box .btn-nav,
 .sc-board .apply::after,

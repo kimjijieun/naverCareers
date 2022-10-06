@@ -85,8 +85,8 @@
                         <!-- <span><span class="blind">code your career</span></span> -->
                         <strong>2022년 네이버 기술 직군 신입 채용 Track_인턴십 (6.7~6.15) / Track_공채 (6.17~6.28)</strong>
                     </a>
-                    <a class="btn-close"><span class="blind">닫기</span></a>
                 </div><!-- btn-close -->
+                <a class="btn-close"><span class="blind">닫기</span></a>
             </div>
         </article>
         <section class="sc-mainbanner"> <!-- sc-visual -->
@@ -138,39 +138,38 @@
                 <form action="" method="get"> <!-- form태그는 두고 안에만 추가 -->
                     <fieldset>
                         <legend class="blind">인재검색</legend>
-
-                        <div class="search-box">
-                            <!-- <span class="ic-search"></span> -->
-                            <div class="search-list">
-                                <label for="keyword" class="ic-title">키워드</label>
-                                <input type="text" name="" id="keyword" placeholder="프론트엔드 개발자">
-                            </div>
-                            <div class="search-list">
-                                <label class="ic-title" for="corp">법인</label><!-- 위처럼 라벨이랑 for로 연결 -->
-                                <select id="corp">
-                                    <option value="preview" selected>법인선택</option>
-                                    <option value="NAVER">NAVER</option>
-                                    <option value="NAVER Cloud">NAVER Cloud</option>
-                                    <option value="WORKS MOBILE">WORKS MOBILE</option>
-                                    <option value="SNOW">SNOW</option>
-                                    <option value="NAVER LABS">NAVER LABS</option>
-                                    <option value="NAVER WEBTOON">NAVER WEBTOON</option>
-                                    <option value="NAVER FINANCIAL">NAVER FINANCIAL</option>
-                                    <option value="NAVER I&S">NAVER I&S</option>
-                                </select>
-                            </div>
-                            <div class="search-list">
-                                <label for="job" class="ic-title">직군</label>
-                                <select id="job">
-                                    <option value="preview" selected>직군선택</option>
-                                    <option value="Tech">Tech</option>
-                                    <option value="Design">Design</option>
-                                    <option value="Service & Business">Service & Business</option>
-                                    <option value="Corporate">Corporate</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn-search">검색</button>
+                        <!-- <span class="ic-search"></span> -->
+                        <i class="ic-search"><span class="blind">검색</span></i>
+                        <div class="keyword-search">
+                            <label for="keyword" class="ic-title">키워드</label>
+                            <input type="text" name="" id="keyword" placeholder="프론트엔드 개발자">
                         </div>
+                        <div class="select-box">
+                            <label class="ic-title" for="corp">법인</label><!-- 위처럼 라벨이랑 for로 연결 -->
+                            <select id="corp">
+                                <option value="preview" selected>법인선택</option>
+                                <option value="NAVER">NAVER</option>
+                                <option value="NAVER Cloud">NAVER Cloud</option>
+                                <option value="WORKS MOBILE">WORKS MOBILE</option>
+                                <option value="SNOW">SNOW</option>
+                                <option value="NAVER LABS">NAVER LABS</option>
+                                <option value="NAVER WEBTOON">NAVER WEBTOON</option>
+                                <option value="NAVER FINANCIAL">NAVER FINANCIAL</option>
+                                <option value="NAVER I&S">NAVER I&S</option>
+                            </select>
+                        </div>
+                        <div class="select-box">
+                            <label for="job" class="ic-title">직군</label>
+                            <select id="job">
+                                <option value="preview" selected>직군선택</option>
+                                <option value="Tech">Tech</option>
+                                <option value="Design">Design</option>
+                                <option value="Service & Business">Service & Business</option>
+                                <option value="Corporate">Corporate</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-search">검색</button>
+                        
                         <!-- 여기다 새로 검색영역2-->
                     </fieldset>
                 </form>
