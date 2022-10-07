@@ -146,6 +146,8 @@
     margin-right: 9px;
     white-space: nowrap;
     color: #000;
+    font-size: 14px;
+    font-weight: bold;
 }
 .search-area .keyword-search input{
     flex: 1;
@@ -154,81 +156,54 @@
     font-weight: bold;
     line-height: 54px;
     font-family: 'TTHoves', 'NanumSquare', sans-serif;
+    /* color: #b4b4b4; */
     border: none;
 }
+.search-area .keyword-search input::placeholder{
+    color: #b4b4b4;
+    font-weight: bold;
+}
+
 .search-area .select-box{
     display: flex;
     flex: 1;
     align-items: center;
 }
+.search-area .select-box .select-option{
+    flex: 1;
+    position: relative;
+}
 
-
-.search-area .search-box{
-    display: flex;
-    background: #fff;
-    align-items: center;
+.search-area .select-box .select-option select {
+    position: relative;
     width: 100%;
-    height: 54px;
+    padding: 0 25px 0 9px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 54px;
+    letter-spacing: -0.30px;
+    text-align: left;
+    color: #d0d0d0;
+    cursor: pointer;
+    background: url(../imges/icon/ico_arrow_down.png) no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-color: #ffffff;
+    background-size: 8px 5px;
+    box-sizing: border-box;
+
 }
-.search-area .search-box input{
-    border: none;
-    width: 65%;
-    /* color: #dae8ff; */
-    letter-spacing: -1.4px;
-    font-weight: 700;
+.search-area .select-box .select-option option[value=""][disabled] {
+    display: none;
 }
-.search-area .search-box .search-list{
-    display: flex;
-    flex: 1;
-    /* width: 100%;
-    height: 40px; */
-}
-.search-area .search-list select{
-    /* width: 70%; */
-    flex: 1;
-    color: grey;
-}
-.search-area .search-list text{
-    /* width: 70%; */
-    flex: 1;
-    color: grey;
-}
-.search-area .search-list option{
+
+.search-area .select-box .select-option option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
     color: #000;
 }
-/* .search-area .search-list .ic-title::before{
-    content: '';
-    display: inline-block;
-    margin: 0 28px 0 21px;
-    background-position: -245px -40px;
-    width: 18px;
-    height: 18px;
-}
-.search-area .ic-title{
-    flex: 1;
-    font-weight: 700;
-    background-repeat: 9px;
-}
-.search-area .search-list #crop{
-    flex: 1;
-}
-.search-area .search-list #job{
-    flex: 1;
-} */
-/* .search-area .ic-search{
-    display: block;
-    margin: 0 28px 0 21px;
-    background-position: -245px -40px;
-    width: 18px;
-    height: 18px;
-    background-size: 328px 205px;
-} */
-.search-area select{
-    border: none;
-}
-
-
-
 
 
 .search-area .btn-search{
@@ -246,7 +221,27 @@
 }
 
 
+.search-area .Msearch-wrap {
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    width: 100%;
 
+    display: none;
+}
+.search-area .Msearch-wrap .Msearch-txt {
+    width: 100%;
+    padding: 10px 45px 10px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+    color: #696868;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: left;
+
+    display: none;
+}
 
 /* main-area */
 
@@ -511,6 +506,15 @@
     /* *768을보고 잡아야함 */
     .search-area .search-box{display: none;}
   
+
+
+    
+    .search-area .Msearch-wrap{
+        display: block;
+    }
+    .search-area .Msearch-wrap .Msearch-txt{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 767px) {
