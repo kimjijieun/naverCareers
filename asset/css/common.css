@@ -54,16 +54,25 @@ body{
 
 .header .logo a,
 .sc-notice .btn-close,
-.search-area .ic-search::after,
+.search-area .search-wrap .ic-search::after,
 .container .team-box .number::after,
 .control-box .btn-nav,
 .sc-board .apply::after,
-footer .tab-area .button::after
+footer .tab-area .button::after,
+.mo-lnb .select-wrap .select-item .ic-arrow
 {
     background: url(../imges/icon/sp_pc.png) no-repeat;
     background-size: 328px 205px; /* 2배 줄인 사이즈 */
 }
 
+
+.search-area .search-wrap .Msearch-wrap .ic-search::after,
+.mo-lnb .mo-searchbox .ic-search::after,
+.mo-lnb .btn-close
+{
+    background: url(../imges/icon/sp_mo.png) no-repeat;
+    background-size: 195px 181px;
+}
 
 
 

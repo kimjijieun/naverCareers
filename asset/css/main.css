@@ -120,15 +120,15 @@
     background-color: #fff;
     padding-bottom: 0;
 }
-.search-area fieldset{
+.search-area .search-wrap fieldset{
     display: flex;
 }
-.search-area .ic-search{
+.search-area .search-wrap .ic-search{
     display: flex;
     align-items: center;
     padding: 0 28px 0 21px;
 }
-.search-area .ic-search::after{
+.search-area .search-wrap .ic-search::after{
     content: '';
     display: block;
     background-position: -245px -40px;
@@ -220,7 +220,7 @@
     color: #000;
 }
 
-
+/* 모바일 */
 .search-area .Msearch-wrap {
     position: relative;
     display: block;
@@ -242,6 +242,136 @@
 
     display: none;
 }
+.search-area .search-wrap .Msearch-wrap .ic-search{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 10px 11px;
+
+    /* display: none; */
+}
+.search-area .search-wrap .Msearch-wrap .ic-search::after{
+    content: '';
+    display: block;
+
+    width: 19px;
+    height: 19px;
+    background-position: -140px -125px;
+    /* display: none; */
+}
+
+
+.mo-lnb{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 60px 52px;
+    z-index: 9999;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    background: #fff;
+
+    /* display: none; */
+}
+.mo-lnb .mo-searchbox{
+    position: relative;
+    border-bottom: 1px solid #d0d0d0;
+}
+.mo-lnb .mo-searchbox input{
+    width: 100%;
+    padding: 6px 30px 6px 0;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.mo-lnb .mo-searchbox input::placeholder{color: #d0d0d0;}
+.mo-lnb .mo-searchbox .ic-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 0;
+    height: 42px;
+}
+.mo-lnb .mo-searchbox .ic-search::after{
+    content: '';
+    display: block;
+    background-position: -268px -40px;
+    width: 15px;
+    height: 15px;
+}
+
+.mo-lnb .select-wrap{margin-top: 45px;}
+.mo-lnb .select-title{
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.mo-lnb .select-wrap .select-list{
+    margin-top: 8px;
+}
+.mo-lnb .select-wrap .select-item{
+    margin-top: 14px;
+}
+.mo-lnb .select-wrap .select-item .btn-select{
+    position: relative;
+    text-align: left;
+}
+.mo-lnb .select-wrap .select-item .ic-arrow{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-position: -136px -93px;
+    width: 8px;
+    height: 5px;
+}
+/* 제이쿼리 */
+.mo-lnb .btn-select.active .ic-arrow{
+    transform: rotate(-180deg);
+}
+.mo-lnb .select-wrap .select-item .select-txt{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 19px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.mo-lnb .select-wrap .sub-list{}
+.mo-lnb .select-wrap .sub-item{}
+.mo-lnb .select-wrap .sub-item .sub-list2{}
+.mo-lnb .select-wrap .sub-list2 .btn-select::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
+}
+.mo-lnb .btn-close{
+    position: absolute;
+    top: 24px;
+    left: 22px;
+
+    background-position: -110px -28px;
+    width: 14px;
+    height: 14px;
+}
+
+
+
+
+
+
 
 /* main-area */
 
@@ -504,17 +634,27 @@
 
 @media screen and (max-width: 1023px) {
     /* *768을보고 잡아야함 */
-    .search-area .search-box{display: none;}
+    .search-area{
+        padding: 22px 22px 50px;
+        background-color: #fafafa;
+    }
+    .search-area .search-wrap{
+        display: block;
+        position: static;
+        margin-bottom: 59px;
+        background-color: transparent;
+        padding-bottom: 0;
+    }
+    .search-area .search-wrap .ic-search{display: none;}
+    .search-area .keyword-search{display: none;}
+    .search-area .select-box{display: none;}
+    .search-area .btn-search{display: none;}
   
 
 
-    
-    .search-area .Msearch-wrap{
-        display: block;
-    }
-    .search-area .Msearch-wrap .Msearch-txt{
-        display: block;
-    }
+
+    .search-area .search-wrap .Msearch-wrap{display: block;}
+    .search-area .search-wrap .Msearch-wrap .Msearch-txt{display: block;}
 }
 
 @media screen and (max-width: 767px) {
