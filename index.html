@@ -133,59 +133,67 @@
             </div>
         </section>
         <section class="search-area">
-            <h2 class="blind">검색영역</h2>
-            <div class="search-wrap">
-                <form action="" method="get"> <!-- form태그는 두고 안에만 추가 -->
-                    <fieldset>
-                        <legend class="blind">인재검색</legend>
-                        <!-- <span class="ic-search"></span> -->
-                        <i class="ic-search"><span class="blind">검색</span></i>
-                        <div class="keyword-search">
-                            <label for="keyword" class="ic-title">키워드</label>
-                            <input type="text" name="" id="keyword" placeholder="프론트엔드 개발자" autocomplete="off">
-                        </div>
-                        <div class="select-box">
-                            <label class="ic-title" for="corp">법인</label><!-- 위처럼 라벨이랑 for로 연결 -->
-                            <div class="select-option">
-                                <select id="corp">
-                                    <option value="" disabled="" selected="">법인선택</option>
-                                    <!-- <option value="preview" selected>법인선택</option> -->
-                                    <option value="NAVER">NAVER</option>
-                                    <option value="NAVER Cloud">NAVER Cloud</option>
-                                    <option value="WORKS MOBILE">WORKS MOBILE</option>
-                                    <option value="SNOW">SNOW</option>
-                                    <option value="NAVER LABS">NAVER LABS</option>
-                                    <option value="NAVER WEBTOON">NAVER WEBTOON</option>
-                                    <option value="NAVER FINANCIAL">NAVER FINANCIAL</option>
-                                    <option value="NAVER I&S">NAVER I&S</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="select-box">
-                            <label for="job" class="ic-title">직군</label>
-                            <div class="select-option">
-                                <select id="job">
-                                    <option value="" disabled="" selected="">직군선택</option>
-                                    <!-- <option value="preview" selected>직군선택</option> -->
-                                    <option value="Tech">Tech</option>
-                                    <option value="Design">Design</option>
-                                    <option value="Service & Business">Service & Business</option>
-                                    <option value="Corporate">Corporate</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn-search">검색</button>
-                        
-                        <!-- 모바일-->
-                        <div class="Msearch-wrap">
-                            <a href="" class="Msearch-txt">Search Jobs</a>
+            <div class="inner">
+                <h2 class="blind">검색영역</h2>
+                <div class="search-wrap">
+                    <form action="" method="get"> <!-- form태그는 두고 안에만 추가 -->
+                        <fieldset>
+                            <legend class="blind">인재검색</legend>
+                            <!-- <span class="ic-search"></span> -->
                             <i class="ic-search"><span class="blind">검색</span></i>
-                        </div>
-                    </fieldset>
-                </form>
+                            <div class="keyword-search">
+                                <label for="keyword" class="ic-title">키워드</label>
+                                <input type="text" name="" id="keyword" placeholder="프론트엔드 개발자" autocomplete="off">
+                            </div>
+                            <div class="select-box">
+                                <label class="ic-title" for="corp">법인</label><!-- 위처럼 라벨이랑 for로 연결 -->
+                                <div class="select-option">
+                                    <select id="corp">
+                                        <option value="" disabled="" selected="">법인선택</option>
+                                        <!-- <option value="preview" selected>법인선택</option> -->
+                                        <option value="NAVER">NAVER</option>
+                                        <option value="NAVER Cloud">NAVER Cloud</option>
+                                        <option value="WORKS MOBILE">WORKS MOBILE</option>
+                                        <option value="SNOW">SNOW</option>
+                                        <option value="NAVER LABS">NAVER LABS</option>
+                                        <option value="NAVER WEBTOON">NAVER WEBTOON</option>
+                                        <option value="NAVER FINANCIAL">NAVER FINANCIAL</option>
+                                        <option value="NAVER I&S">NAVER I&S</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="select-box">
+                                <label for="job" class="ic-title">직군</label>
+                                <div class="select-option">
+                                    <select id="job">
+                                        <option value="" disabled="" selected="">직군선택</option>
+                                        <!-- <option value="preview" selected>직군선택</option> -->
+                                        <option value="Tech">Tech</option>
+                                        <option value="Design">Design</option>
+                                        <option value="Service & Business">Service & Business</option>
+                                        <option value="Corporate">Corporate</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-search">검색</button>
+                
+                            <!-- 모바일-->
+                            <div class="Msearch-wrap">
+                                <a href="" class="Msearch-txt">Search Jobs</a>
+                                <i class="ic-search"><span class="blind">검색</span></i>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                
+                <div class="title-wrap">
+                    <h2 class="main-title">Teams</h2>
+                    <p class="mid-title">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p> <!-- 그냥 내용이니까 p태그 -->
+                    <!-- <a href="">Learn more</a> 수정-->
+                    <a href="" class="link-more">Learn more</a><!-- span묶을필요없음 a태그만 사용하자 -->
+                </div>
+                
             </div>
-
-
             <div class="mo-lnb">
                 <form action="" method="get">
                     <fieldset>
@@ -357,7 +365,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">프로덕트디자인</span>
                                                     </button>
                                                 </li>
@@ -372,7 +379,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">그래픽디자인</span>
                                                     </button>
                                                 </li>
@@ -387,7 +393,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">인터렉션디자인</span>
                                                     </button>
                                                 </li>
@@ -402,7 +407,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">브랜드디자인</span>
                                                     </button>
                                                 </li>
@@ -417,7 +421,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">공통</span>
                                                     </button>
                                                 </li>
@@ -441,7 +444,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">서비스매니지먼트</span>
                                                     </button>
                                                 </li>
@@ -456,7 +458,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">콘텐츠매니지먼트</span>
                                                     </button>
                                                 </li>
@@ -471,7 +472,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">광고서비스매니지먼트</span>
                                                     </button>
                                                 </li>
@@ -486,7 +486,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">비즈니스매니지먼트</span>
                                                     </button>
                                                 </li>
@@ -501,7 +500,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">더보기마케팅</span>
                                                     </button>
                                                 </li>
@@ -516,7 +514,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">어카운트/세일즈</span>
                                                     </button>
                                                 </li>
@@ -531,7 +528,6 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">공통</span>
                                                     </button>
                                                 </li>
@@ -555,25 +551,21 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">재무기획</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">회계</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">세무</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">자금</span>
                                                     </button>
                                                 </li>
@@ -588,19 +580,16 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">소싱</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">운영관리</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">빌링</span>
                                                     </button>
                                                 </li>
@@ -615,19 +604,16 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">투자</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Investor Relations</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Corporate Strategy</span>
                                                     </button>
                                                 </li>
@@ -642,19 +628,16 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Risk Management</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">ESG</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">내부감사</span>
                                                     </button>
                                                 </li>
@@ -669,13 +652,11 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">법무</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">지식재산</span>
                                                     </button>
                                                 </li>
@@ -690,13 +671,11 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">개인정보보호</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">통신비밀보호</span>
                                                     </button>
                                                 </li>
@@ -711,19 +690,16 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Strategic Communication</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">산업및정책연구</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Corporate Experience</span>
                                                     </button>
                                                 </li>
@@ -738,19 +714,16 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Human Resources</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Employee Relations</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Talent Acquisition</span>
                                                     </button>
                                                 </li>
@@ -765,37 +738,31 @@
                                             <ul class="sub-list2">
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">채용운영</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">통번역</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">비서</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">기사</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">Health Care</span>
                                                     </button>
                                                 </li>
                                                 <li class="sub-item">
                                                     <button class="btn-select">
-                                                        <i class="ic-arrow"><span class="blind">더보기</span></i>
                                                         <span class="select-txt">근로지원</span>
                                                     </button>
                                                 </li>
@@ -806,7 +773,7 @@
                             </ul>
                         </div>
 
-                        <div class="select-box">
+                        <div class="select-wrap2">
                             <em class="select-title">고용형태</em>
 
                             <ul class="sub-list2">
@@ -828,7 +795,7 @@
                             </ul>
                         </div>
 
-                        <div class="select-box">
+                        <div class="select-wrap2">
                             <em class="select-title">경력</em>
 
                             <ul class="sub-list2">
@@ -850,7 +817,7 @@
                             </ul>
                         </div>
 
-                        <div class="select-box">
+                        <div class="select-wrap2">
                             <em class="select-title">근무지</em>
 
                             <ul class="sub-list2">
@@ -885,23 +852,6 @@
                         <button class="btn-close"><span class="blind">채용검색닫기</span></button>
                     </fieldset>
                 </form>
-            </div>
-        </section>
-        
-
-
-
-
-        <!-- 부모 필요없음 -->
-        <section class="sc-teams">
-            <div class="inner">
-                <div class="title-wrap">
-                    <h2 class="main-title">Teams</h2>
-                    <p class="mid-title">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p> <!-- 그냥 내용이니까 p태그 -->
-                    <!-- <a href="">Learn more</a> 수정-->
-                    <a href="" class="link-more">Learn more</a><!-- span묶을필요없음 a태그만 사용하자 -->
-                </div>
-                
             </div>
 
             <ul class="team-list">
@@ -951,7 +901,10 @@
                 </li>
 
             </ul>
+
         </section>
+        
+
 
         <div class="inner">
             <section class="sc-people">
