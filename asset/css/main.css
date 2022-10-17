@@ -86,6 +86,7 @@
     text-shadow: 6px 6px 18px rgb(0 0 0 / 16%);
     padding: 20px;
     box-sizing: border-box;
+    text-align: center;
 
     position: absolute;
     top: 50%;
@@ -93,12 +94,14 @@
     transform: translate(-50%, -50%);
 
     opacity: 0;
-    transition:opacity 0.5s 0.3s;
+    transition:opacity 1.2s 0.3s linear;
 }
 
 .sc-mainbanner .swiper-slide-active .video-txt{
     opacity: 1;
+    /* animation-delay: 2s; */
 }
+.sc-mainbanner .video-txt br{display: none;}
 
 
 /* search-area 검색영역 */
@@ -276,7 +279,7 @@
     box-sizing: border-box;
     background: #fff;
 
-    /* display: none; */
+    display: none;
 }
 .mo-lnb .mo-searchbox{
     position: relative;
@@ -334,10 +337,7 @@
     width: 8px;
     height: 5px;
 }
-/* 제이쿼리 */
-.mo-lnb .btn-select.active .ic-arrow{
-    transform: rotate(-180deg);
-}
+
 .mo-lnb .select-txt{
     font-size: 14px;
     display: inline-block;
@@ -371,18 +371,6 @@
     border: 1px solid #d0d0d0;
     border-radius: 50%;
 }
-
-/* 제이쿼리 */
-.mo-lnb .btn-select.open{
-    display: block;
-}
-.mo-lnb .select-item.open{
-    display: block;
-}
-.mo-lnb .sub-list2.open{
-    display: block;
-}
-
 
 
 .mo-lnb .btn-close{
@@ -423,6 +411,38 @@
     background-color: #000;
 }
 
+/* 제이쿼리 */
+.search-area .Msearch-wrap .Msearch-txt.active 
+.mo-lnb{
+    display: block;
+}
+
+.mo-lnb .btn-select.open .sub-list{
+    display: block;
+}
+.mo-lnb .btn-select.open .ic-arrow{
+    transform: rotate(-180deg);
+}
+.mo-lnb .btn-select.open .sub-list2{
+    display: block;
+}
+.mo-lnb .sub-list2 .btn-select.on::before{
+    border: 1px solid #000;
+    background-color: #000;
+}
+.mo-lnb .btn-lnbclose.active{
+    /* 전부 초기화 */
+}
+.mo-lnb .btn-close{
+    display: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -455,12 +475,22 @@
 }
 
 .link-more{
-    /* position: relative; */
+    position: relative;
     display: inline-block;
-    border-bottom: 1px solid;
     vertical-align: top;
     font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
     letter-spacing: -0.36px;
+}
+.link-more::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
 }
 
 .container .team-list{
@@ -491,13 +521,13 @@
     display: inline-block;
 }
 .container .team-box .number{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 13px;
     position: relative;
-    /* margin-top: 13px; */
     margin-left: 18px;
     font-size: 15px;
     letter-spacing: -0.3px;
-    
-    vertical-align: top;
 }
 .container .team-box .number::after{
     content: '';
@@ -680,13 +710,125 @@
 
 @media screen and (max-width: 1100px) {
     /* *1024을 기준으로 화면을 보고 잡아야함 */
-    .sc-notice .inner{padding: 0 22px;}
+    .sc-notice{height: auto;}
+    /* .sc-notice .inner{padding: 0 22px;} */
     .sc-benefits .txt-box .txt-desc br{display: none;}
  
 }
 
 @media screen and (max-width: 1023px) {
     /* *768을보고 잡아야함 */
+
+    .sc-notice{height: auto;}
+    .sc-notice .inner{
+        padding: 17px 22px;
+    }
+    .sc-notice .wrap{
+        width: auto;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: -0.28px;
+        height: 26px;
+        margin-left: 20px;
+    }
+    .sc-notice .notice-box strong::before{
+        content: '';
+        width: 170px;
+        height: 22px;
+        background-size: 170px 22px;
+        margin: 0 10px 0 0;
+    }
+    .sc-notice .btn-close{
+        top: 23px;
+        right: 21px;
+        transform: translateY(0);
+    }
+    .sc-mainbanner .video-box{
+        padding-bottom: 62.4%;
+    }
+    .sc-mainbanner video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sc-mainbanner .video-txt{
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -0.8px;
+    }
+    .sc-mainbanner .video-txt br{display: block;}
+
+    .container .title-wrap{margin-bottom: 29px;}
+    .container .main-title{
+        margin-bottom: 11px;
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: -0.7px;
+    }
+    .container .mid-title{
+        padding-right: 20px;
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+        display: inline;
+    }
+    .link-more{
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: -0.24px;
+    }
+    .link-more::before{bottom: 2px;}
+    .container .team-list{
+        margin-top: 29px;
+    }
+    .container .team-box{
+        padding: 16px 0;
+        box-sizing: border-box;
+    }
+    .container .team-box .inner{
+        padding: 0 22px;
+        display: block;
+    }
+    .container .team-box .item-title{
+        width: 100%;
+    }
+    .container .team-box .title{
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: -0.48px;
+    }
+    .container .team-box .number{
+        margin: 4px 0 0 14px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.28px;
+    }
+    .container .team-box .desc{
+        margin-top: 1px;
+        width: 100%;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+    }
+    .container .team-box .number::after{
+        background: url(../imges/icon/sp_mo.png) no-repeat;
+        top: 1px;
+        background-position: -129px -28px;
+        width: 11px;
+        height: 11px;
+    }
+
+
+
+
+
     .search-area{
         /* padding: 22px 22px 50px; */
         padding: 22px 0 50px;
