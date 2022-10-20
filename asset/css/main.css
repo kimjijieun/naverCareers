@@ -412,20 +412,26 @@
 }
 
 /* 제이쿼리 */
-.search-area .Msearch-wrap .Msearch-txt.active 
-.mo-lnb{
+/* .search-area .Msearch-wrap .Msearch-txt.active  */
+.mo-lnb.active{
     display: block;
 }
+/* .mo-lnb .btn-select.open .sub-list{
+    display: block;
+} */
 
-.mo-lnb .btn-select.open .sub-list{
-    display: block;
-}
 .mo-lnb .btn-select.open .ic-arrow{
     transform: rotate(-180deg);
+}
+.mo-lnb .btn-select.open .sub-list{
+    display: block;
 }
 .mo-lnb .btn-select.open .sub-list2{
     display: block;
 }
+/* .mo-lnb .btn-select.open .sub-list2{
+    display: block;
+} */
 .mo-lnb .sub-list2 .btn-select.on::before{
     border: 1px solid #000;
     background-color: #000;
@@ -433,10 +439,12 @@
 .mo-lnb .btn-lnbclose.active{
     /* 전부 초기화 */
 }
-.mo-lnb .btn-close{
-    display: none;
+/* .mo-lnb .select-wrap .select-item.open .sub-list{
+    display: block;
 }
-
+.mo-lnb .sub-item.open .sub-list2{
+    display: block;
+} */
 
 
 
@@ -569,7 +577,7 @@
     /* height: 520px; */
 }
 .sc-people .slide-box{
-    /* display: block; */ /* @@@@왜 블럭줬는데 안먹지 */
+    display: block;/* @@@@왜 블럭줬는데 안먹지 */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -820,10 +828,52 @@
     .container .team-box .number::after{
         background: url(../imges/icon/sp_mo.png) no-repeat;
         top: 1px;
+        background-size: 195px 181px;
         background-position: -129px -28px;
         width: 11px;
         height: 11px;
     }
+    .sc-people{margin: 68px 0 56px;}
+    .sc-people .slide-box .img-box{
+        padding-bottom: 100%;
+    }
+
+    .sc-people .txt-box{margin-top: 21px;}
+    .box-title{
+        padding-right: 20px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.36px;
+    }
+    .sc-people .midslide{padding: 0;}
+    .sc-people .txt-box .link-more{display: none;}
+    .control-box{margin-top: 0;}
+    .sc-benefits{margin-top: 112px;}
+
+    .sc-board{padding: 71px 0 99px;}
+    .sc-board .board-title{
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: -0.4px;
+    }
+    .sc-board .apply{
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+    }
+    .sc-board .apply::after{
+        margin: -1px 0 0 10px;
+        background: url(../imges/icon/sp_mo.png);
+        background-size: 195px 181px;
+        background-position: 0px -90px;
+        width: 30px;
+        height: 30px;
+        width: 31px;
+        height: 31px;
+    }
+
+
 
 
 
@@ -856,9 +906,15 @@
     .mo-lnb .mo-searchbox .ic-search{
 
     }
+
+
 }
 
 @media screen and (max-width: 767px) {
     /* *320을 보고 잡아야함 */
-  
+    .container .sc-people .title-wrap{
+        margin-bottom: 25px;
+    }
+    .sc-benefits{margin-top: 0;}
+    .sc-benefits .lastslide{margin-bottom: 0;}
 }

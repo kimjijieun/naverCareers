@@ -104,9 +104,39 @@ $(function(){
     // })
 
 
+    //모바일 영역
     //사이드 메뉴
     $('.mgnb-area .m-link-menu1').click(function(e){
         e.preventDefault();
         $('.m-menu-item, .m-sub-list').toggleClass('active')
+    })
+    $('.Msearch-wrap').click(function(e){
+        e.preventDefault();
+        $('.mo-lnb').addClass('active')
+    })
+
+    $('.mo-lnb .btn-close').click(function(e){
+        e.preventDefault();
+        $('.mo-lnb').removeClass('active')
+    })
+    // $('.mo-lnb .select-wrap .select-item').click(function(e){
+    //     e.preventDefault();
+    //     if ($(this).hasClass('open')) {
+    //         $('.mo-lnb .select-wrap .select-item').removeClass('open')
+    //         $('.mo-lnb .btn-select').addClass('open')
+    //     } else {
+    //         $('.mo-lnb .select-wrap .select-item').addClass('open')
+    //         $('.mo-lnb .btn-select').removeClass('open')
+    //     }
+    // })
+
+    $('.mo-lnb .btn-select').click(function(e){
+        e.preventDefault();
+        $('this').toggleClass('open')
+        if ($('this').siblings('ul').css('display') == 'block') {
+            $('this').siblings('ul').css('display','none')
+        } else {
+            $('this').siblings('ul').css('display','block')
+        }
     })
 });
