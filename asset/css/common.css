@@ -4,6 +4,9 @@ body{
     font-size: 14px;
     padding-top: 64px;
 }
+body.active{
+    overflow: hidden;
+}
 /* .inner{
     height: 64px;
     max-width: 1920px;

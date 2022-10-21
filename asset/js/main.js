@@ -113,11 +113,13 @@ $(function(){
     $('.Msearch-wrap').click(function(e){
         e.preventDefault();
         $('.mo-lnb').addClass('active')
+        $('body').addClass('active')
     })
 
     $('.mo-lnb .btn-close').click(function(e){
         e.preventDefault();
         $('.mo-lnb').removeClass('active')
+        $('body').removeClass('active')
     })
     // $('.mo-lnb .select-wrap .select-item').click(function(e){
     //     e.preventDefault();
@@ -130,13 +132,23 @@ $(function(){
     //     }
     // })
 
-    $('.mo-lnb .btn-select').click(function(e){
+    $('.mo-lnb .select-wrap .btn-select').click(function(e){
         e.preventDefault();
-        $('this').toggleClass('open')
-        if ($('this').siblings('ul').css('display') == 'block') {
-            $('this').siblings('ul').css('display','none')
+        $(this).toggleClass('open')
+        if ($(this).siblings('ul').css('display') == 'block') {
+            $(this).siblings('ul').css('display','none')
         } else {
-            $('this').siblings('ul').css('display','block')
+            $(this).siblings('ul').css('display','block')
         }
+    })
+
+    $('.mo-lnb .sub-list2 .btn-select').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('on')
+    })
+
+    $('.mo-lnb .btn-lnbclose').click(function(e){
+        e.preventDefault();
+        $('.mo-lnb .btn-select').removeClass('on','open')
     })
 });
