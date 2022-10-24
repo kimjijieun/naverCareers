@@ -303,6 +303,7 @@
     right: 0;
     padding: 8px 0;
     height: 42px;
+    cursor: pointer;
 }
 .mo-lnb .mo-searchbox .ic-search::after{
     content: '';
@@ -328,6 +329,7 @@
 .mo-lnb .btn-select{
     position: relative;
     text-align: left;
+    cursor: pointer;
 }
 .mo-lnb .select-wrap .select-item .ic-arrow{
     position: absolute;
@@ -381,6 +383,7 @@
     background-position: -110px -28px;
     width: 14px;
     height: 14px;
+    cursor: pointer;
 }
 .mo-lnb .select-wrap2{
     margin-top: 45px;
@@ -400,6 +403,7 @@
     /* font-weight: bold; */
 
     font-family: 'TTHoves', 'NanumSquare', sans-serif;
+    cursor: pointer;
 }
 .mo-lnb .btn-lnbclose::before{
     content: '';
@@ -583,7 +587,7 @@
     object-fit: cover;
 }
 .sc-people .slide-box .img-box{
-    padding-bottom: 47%;
+    padding-bottom: 47.403%;
     position: relative;
 }
 .sc-people .slide-box img{
@@ -592,6 +596,7 @@
     object-fit: cover;
     position: absolute;
     top: 0;left: 0;
+    bottom: 0;right: 0;
 }
 
 /* .inner1 .btn{

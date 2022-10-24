@@ -71,6 +71,7 @@ $(function(){
         breakpoints:{
             769:{/* 768보다 컸을때 */
                 slidesPerView: 3,
+                spaceBetween: 44,
             }
           },
     });
