@@ -19,6 +19,13 @@ body.active{
     margin: 0 auto;
     padding: 0 104px 0 98px;
 }
+.inner1{
+    max-width: 1408px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 104px;
+    box-sizing: border-box;
+}
 .container{
     overflow: hidden;
 }

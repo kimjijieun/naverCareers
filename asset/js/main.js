@@ -76,6 +76,15 @@ $(function(){
           },
     });
 
+// 서치 선택시 색 변경
+    $('.search-area select').change(function(e){
+        e.preventDefault();
+        $(this).css('color','#000');
+    })
+
+
+
+
 
 
     // w1100
