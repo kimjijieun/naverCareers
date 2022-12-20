@@ -157,8 +157,15 @@ $(function(){
         $(this).toggleClass('on')
     })
 
+    // 더블클릭방지
+    $(".mo-lnb .sub-list2 .item-txt").on("click",function(){                                
+        $(this).attr("disabled",true);
+    });
+
     $('.mo-lnb .btn-lnbclose').click(function(e){
         e.preventDefault();
         $('.mo-lnb .btn-select').removeClass('on','open')
+
+        $('input').prop('checked',false)
     })
 });
