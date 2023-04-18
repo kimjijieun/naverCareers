@@ -12,7 +12,7 @@
 .header::after{
     content: '';
     position: absolute;
-    top: 64px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 182px;
@@ -41,22 +41,20 @@
 
 
 /* gnb */
-.gnb-area{
+.header .gnb-area{
     flex: 1;
     margin-left: 29px;
     height: 100%;
     justify-content: space-between;
     display: flex;
 }
-.menu-list{
+.header .menu-list{
     /* ul */
     height: 100%;
     display: flex;
     /* float: left; */
 }
 .menu-list .menu-item{
-    /* li */
-    /* float: left; */
     padding: 0 10px;
     font-size: 17px;
     /* line-height: 32px; */
@@ -79,20 +77,14 @@
 .gnb-area a:hover::after{
     display: block;
 }
+.gnb-area .link-util:last-child:hover::after{
+    display: none;
+}
 
 
 
 
-/* .menu-item .sub-list::before{
-    content: '';
-    position: absolute;
-    background: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    height: 164px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-} */
+
 .menu-item .sub-list{
     display: none;
     position: absolute;
@@ -118,9 +110,43 @@
     display: flex;align-items: center;
 }
 .header .util-area a{
-    margin: 0 10px;
+    padding: 0 10px;
     font-size: 17px;
 }
+
+
+.header .util-area .link-lang{
+    display: none;
+
+    position: absolute;
+    top: 26px;
+    left: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 10;
+
+    padding: 0 10px;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+}
+
+.header .util-area .link-util .ic-linkArrow{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    background-position: -122px -93px;
+    width: 10px;
+    height: 6px;
+}
+
+
+/* 제이쿼리 */
+.header .util-area .link-util:last-child.open .link-lang{display: block;}
+.header .util-area .link-util:last-child.open .ic-linkArrow{
+    transform: rotate(180deg);
+}
+
 .header .btn-menu{
     display: none;
 }
@@ -246,13 +272,13 @@ footer .tab-area.active .button::after{
         height: 60px;
         padding: 0 20px;
     }
-    .gnb-area{
+    .header .gnb-area{
         justify-content: flex-end;
         align-items: center;
     }
 
 
-    .menu-list,.header .util-area{display: none;}
+    .header .menu-list,.header .util-area{display: none;}
     .header .logo a{
         /* display: block; */
         width: 160px;height: 23px;
@@ -354,6 +380,7 @@ footer .tab-area.active .button::after{
     }
 
     .header .m-util-area{
+        position: relative;
         font-size: 22px;
         line-height: 46px;
         letter-spacing: -0.44px;
@@ -362,12 +389,31 @@ footer .tab-area.active .button::after{
     }
     .header .m-util-area::before{
         content: '';
+        position: absolute;
         display: block;
         width: 100%;
         height: 1px;
-        padding: 0 22px;
+        left: 22px;
+        right: 22px;
         background-color: #d0d0d0;
     }
+    .header .m-util-area.m-lang{}
+    .header .m-util-area.m-lang .m-link-menu{font-size: 18px;}
+    .header .m-util-area.m-lang .m-link-menu::before{
+        content: "";
+        margin: -4px 10px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #d0d0d0;
+    }
+    .header .m-util-area.m-lang .m-link-menu.check::before{
+        background-color: #000;
+        border: 1px solid #fff;
+    }
+
 
 
 

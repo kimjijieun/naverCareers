@@ -1,5 +1,12 @@
 $(function(){
 
+    //헤더 kr
+    $('.link-util:last-child').click(function(e){
+        e.preventDefault();
+        $('.link-util:last-child').toggleClass('open')
+    })
+
+
     // 닫기 사라지기
     $('.sc-notice .btn-close').click(function () {
         $('.sc-notice').hide();
@@ -21,16 +28,6 @@ $(function(){
     $('.tab-area .button').click(function(){
         $('.tab-area').toggleClass('active');
     });
-    
-    
-    // $('.tab-area .button').click(function(e){
-    //     e.preventDefault();
-    //     $('.gnb').addClass('on');
-    // });
-    // $('.tab-area .button').click(function(e){
-    //     e.preventDefault();
-    //     $('.gnb').removeClass('on');
-    // });
 
     
 
@@ -84,34 +81,18 @@ $(function(){
 
 
 
-
-
-
     // w1100
 
     $('.gnb-area .btn-menu').click(function(){
-        // $('.btn-menu').addClass('btn-close')
-        // $('.mgnb-area').addClass('active')
         $('.btn-menu').toggleClass('btn-close')
         $('.mgnb-area').toggleClass('active')
-
-        // if ('btn-menu'.css('display') == 'none') {
-        //     $('.btn-menu').addClass('btn-close')
-        // }
     })
-    // $('.gnb-area .btn-close').click(function(){
-    //     $('.btn-menu').removeClass('btn-close')
-    //     $('.mgnb-area').removeClass('active')
-    // })
 
-    // $('.gnb-area .btn-menu').click(function(){
-    //     $('.btn-menu').removeClass('btn-close')
-    //     $('.mgnb-area').removeClass('active')
-
-    //     if ('btn-close'.css('display') == 'block') {
-    //         $('.btn-close').removeClass('btn-close')
-    //     }
-    // })
+    // 메뉴 언어선택
+    $('.mgnb-area .m-lang .m-link-menu').click(function(e){
+        e.preventDefault();
+        $(this).addClass('check').siblings().removeClass('check')
+    })
 
 
     //모바일 영역
@@ -131,16 +112,7 @@ $(function(){
         $('.mo-lnb').removeClass('active')
         $('body').removeClass('active')
     })
-    // $('.mo-lnb .select-wrap .select-item').click(function(e){
-    //     e.preventDefault();
-    //     if ($(this).hasClass('open')) {
-    //         $('.mo-lnb .select-wrap .select-item').removeClass('open')
-    //         $('.mo-lnb .btn-select').addClass('open')
-    //     } else {
-    //         $('.mo-lnb .select-wrap .select-item').addClass('open')
-    //         $('.mo-lnb .btn-select').removeClass('open')
-    //     }
-    // })
+
 
     $('.mo-lnb .select-wrap .btn-select').click(function(e){
         e.preventDefault();
@@ -167,5 +139,11 @@ $(function(){
         $('.mo-lnb .btn-select').removeClass('on','open')
 
         $('input').prop('checked',false)
+    })
+
+    $('.btn-all').click(function(e){
+        e.preventDefault();
+        $('.sub-list2 input').prop('checked',true)
+        
     })
 });

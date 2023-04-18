@@ -70,7 +70,8 @@ body.active{
 .sc-board .apply::after,
 footer .tab-area .button::after,
 .mo-lnb .select-wrap .select-item .ic-arrow,
-.mo-lnb .mo-searchbox .ic-search::after
+.mo-lnb .mo-searchbox .ic-search::after,
+.header .util-area .link-util .ic-linkArrow
 {
     background: url(../imges/icon/sp_pc.png) no-repeat;
     background-size: 328px 205px; /* 2배 줄인 사이즈 */
@@ -78,7 +79,6 @@ footer .tab-area .button::after,
 
 
 .search-area .search-wrap .Msearch-wrap .ic-search::after,
-/* .mo-lnb .mo-searchbox .ic-search::after, */
 .mo-lnb .btn-close
 {
     background: url(../imges/icon/sp_mo.png) no-repeat;
@@ -101,7 +101,6 @@ footer .tab-area .button::after,
     .header .btn-menu.btn-close,
     .header .m-link-menu::after
     {
-        /* background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png); */
         background: url(../imges/icon/sp_mo.png);
         background-size: 195px 181px;
     }
