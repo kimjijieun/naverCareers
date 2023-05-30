@@ -10,8 +10,7 @@
 
     <link rel="shortcut icon" href="./asset/imges/favicon/naver_favicon_16.ico" type="image/x-icon">
     <link rel="icon" href="./asset/imges/favicon/naver_favicon_24.ico" type="image/x-icon">
-    <!-- <link rel="shortcut icon" type="image/x-icon" size="16x16" href="./asset/imges/favicon/naver_favicon_16.ico">
-	<link rel="shortcut icon" type="image/x-icon" size="24x24" href="./asset/imges/favicon/naver_favicon_24.ico"> -->
+
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./asset/css/layout.css">
@@ -21,16 +20,13 @@
 <body>
     <header class="header">
         <div class="inner">
-            <!-- inner로 변경 -->
             <h1 class="logo"><a href=""><span class="blind">NAVER Careers</span></a></h1>
 
             <nav class="gnb-area">
-                <!-- 클래스명 오류 list,item -->
                 <ul class="menu-list">
                     <li class="menu-item">
                         <a href="" class="link-menu">Teams</a>
                         <ul class="sub-list">
-                            <!-- sub-list, item -->
                             <li class="sub-item"><a href="">Tech</a></li>
                             <li class="sub-item"><a href="">Design</a></li>
                             <li class="sub-item"><a href="">Service & Business</a></li>
@@ -44,7 +40,6 @@
                     <li class="menu-item"><a href="" class="link-menu">Value</a></li>
                 </ul>
                 <div class="util-area">
-                    <!-- a태그만 util-area -->
                     <a href="" class="link-util">Jobs</a>
                     <a href="" class="link-util">Login</a>
                     <a href="" class="link-util">FAQ</a>
@@ -64,7 +59,6 @@
                     <li class="m-menu-item">
                         <a href="" class="m-link-menu m-link-menu1">Teams</a>
                         <ul class="m-sub-list">
-                            <!-- sub-list, item -->
                             <li class="m-sub-item"><a href="">Tech</a></li>
                             <li class="m-sub-item"><a href="">Design</a></li>
                             <li class="m-sub-item"><a href="">Service & Business</a></li>
@@ -93,17 +87,6 @@
     </header>
 
     <main class="container">
-        <!-- <article class="sc-notice">
-            <h2 class="blind">공지사항</h2>
-            <div class="inner">
-                <div class="wrap">
-                    <a href="" class="notice-box">
-                        <strong>2022년 네이버 기술 직군 신입 채용 Track_인턴십 (6.7~6.15) / Track_공채 (6.17~6.28)</strong>
-                    </a>
-                </div>
-                <a class="btn-close"><span class="blind">닫기</span></a>
-            </div>
-        </article> -->
         <section class="sc-mainbanner"> <!-- sc-visual -->
             <div class="swiper mainslide">
                 <h3 class="blind">동영상 메인배너</h3>
@@ -114,7 +97,7 @@
                                 <source src="https://recruit.pstatic.net/share/tmplat/naver/video/Joker.mp4"
                                     type="video/mp4">
                             </video>
-                            <h3 class="video-txt">Board<br> the Navership</h3><!-- 변경 -->
+                            <h3 class="video-txt">Board<br> the Navership</h3>
                         </div>
                     </li>
                     <li class="swiper-slide">
@@ -151,21 +134,19 @@
             <div class="inner1">
                 <h2 class="blind">검색영역</h2>
                 <div class="search-wrap">
-                    <form method="get"> <!-- form태그는 두고 안에만 추가 -->
+                    <form method="get">
                         <fieldset>
                             <legend class="blind">인재검색</legend>
-                            <!-- <span class="ic-search"></span> -->
                             <i class="ic-search"><span class="blind">검색</span></i>
                             <div class="keyword-search">
                                 <label for="keyword" class="ic-title">키워드</label>
                                 <input type="text" id="keyword" placeholder="프론트엔드 개발자" autocomplete="off">
                             </div>
                             <div class="select-box">
-                                <label class="ic-title" for="corp">법인</label><!-- 위처럼 라벨이랑 for로 연결 -->
+                                <label class="ic-title" for="corp">법인</label>
                                 <div class="select-option">
                                     <select id="corp">
                                         <option value="" disabled="" selected="">법인선택</option>
-                                        <!-- <option value="preview" selected>법인선택</option> -->
                                         <option value="NAVER">NAVER</option>
                                         <option value="NAVER Cloud">NAVER Cloud</option>
                                         <option value="WORKS MOBILE">WORKS MOBILE</option>
@@ -182,7 +163,6 @@
                                 <div class="select-option">
                                     <select id="job">
                                         <option value="" disabled="" selected="">직군선택</option>
-                                        <!-- <option value="preview" selected>직군선택</option> -->
                                         <option value="Tech">Tech</option>
                                         <option value="Design">Design</option>
                                         <option value="Service & Business">Service & Business</option>
@@ -203,9 +183,8 @@
                 
                 <div class="title-wrap">
                     <h2 class="main-title">Teams</h2>
-                    <p class="mid-title">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p> <!-- 그냥 내용이니까 p태그 -->
-                    <!-- <a href="">Learn more</a> 수정-->
-                    <a href="" class="link-more">Learn more</a><!-- span묶을필요없음 a태그만 사용하자 -->
+                    <p class="mid-title">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p>
+                    <a href="" class="link-more">Learn more</a>
                 </div>
                 
             </div>
@@ -238,65 +217,41 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item1" class="blind">
                                                     <label for="item1" class="item-txt">Frontend</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Frontend</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item2" class="blind">
                                                     <label for="item2" class="item-txt">Android</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Android</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item3" class="blind">
                                                     <label for="item3" class="item-txt">iOS</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">iOS</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item4" class="blind">
                                                     <label for="item4" class="item-txt">Backend</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Backend</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item5" class="blind">
                                                     <label for="item5" class="item-txt">AI/ML</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">AI/ML</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item5-1" class="blind">
                                                     <label for="item5-1" class="item-txt">Data Engineering</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Data Engineering</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item6" class="blind">
                                                     <label for="item6" class="item-txt">Embedded SW</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Embedded SW</span>
-                                                    </button> -->
+
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item7" class="blind">
                                                     <label for="item7" class="item-txt">Graphics</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Graphics</span>
-                                                    </button> -->
+
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item8" class="blind">
                                                     <label for="item8" class="item-txt">공통</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">공통</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -310,9 +265,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item9" class="blind">
                                                     <label for="item9" class="item-txt">Hardware</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Hardware</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -326,16 +279,11 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item10" class="blind">
                                                     <label for="item10" class="item-txt">Engineering</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Infra Engineering</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item11" class="blind">
                                                     <label for="item11" class="item-txt">Data Center Engineering</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Data Center Engineering</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -349,9 +297,6 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item12" class="blind">
                                                     <label for="item12" class="item-txt">Security</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Security</span>
-                                                    </button> -->
                                                 </li>
                                             </ul>
                                         </li>
@@ -365,16 +310,12 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item13" class="blind">
                                                     <label for="item13" class="item-txt">Tech Staff</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Tech Staff</span>
-                                                    </button> -->
+
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item14" class="blind">
                                                     <label for="item14" class="item-txt">QA</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">QA</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -388,9 +329,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item15" class="blind">
                                                     <label for="item15" class="item-txt">공통</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">공통</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -413,9 +352,6 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item16" class="blind">
                                                     <label for="item16" class="item-txt">프로덕트디자인</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">프로덕트디자인</span>
-                                                    </button> -->
                                                 </li>
                                             </ul>
                                         </li>
@@ -429,9 +365,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item17" class="blind">
                                                     <label for="item17" class="item-txt">그래픽디자인</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">그래픽디자인</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -445,9 +379,6 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item18" class="blind">
                                                     <label for="item18" class="item-txt">인터렉션디자인</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">인터렉션디자인</span>
-                                                    </button> -->
                                                 </li>
                                             </ul>
                                         </li>
@@ -461,9 +392,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item19" class="blind">
                                                     <label for="item19" class="item-txt">브랜드디자인</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">브랜드디자인</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -477,9 +406,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item20" class="blind">
                                                     <label for="item20" class="item-txt">공통</label>
-                                                   <!-- <button class="btn-select">
-                                                        <span class="select-txt">공통</span>
-                                                    </button>  -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -502,9 +429,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item21" class="blind">
                                                     <label for="item21" class="item-txt">서비스매니지먼트</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">서비스매니지먼트</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -518,9 +443,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item22" class="blind">
                                                     <label for="item22" class="item-txt">콘텐츠매니지먼트</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">콘텐츠매니지먼트</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -534,9 +457,6 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item23" class="blind">
                                                     <label for="item23" class="item-txt">광고서비스매니지먼트</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">광고서비스매니지먼트</span>
-                                                    </button> -->
                                                 </li>
                                             </ul>
                                         </li>
@@ -550,9 +470,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item24" class="blind">
                                                     <label for="item24" class="item-txt">비즈니스매니지먼트</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">비즈니스매니지먼트</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -566,9 +484,7 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item25" class="blind">
                                                     <label for="item25" class="item-txt">더보기마케팅</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">더보기마케팅</span>
-                                                    </button> -->
+
                                                 </li>
                                             </ul>
                                         </li>
@@ -582,9 +498,6 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item26" class="blind">
                                                     <label for="item26" class="item-txt">어카운트/세일즈</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">어카운트/세일즈</span>
-                                                    </button> -->
                                                 </li>
                                             </ul>
                                         </li>
@@ -598,9 +511,6 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item27" class="blind">
                                                     <label for="item27" class="item-txt">공통</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">공통</span>
-                                                    </button> -->
                                                 </li>
                                             </ul>
                                         </li>
@@ -623,30 +533,22 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item28" class="blind">
                                                     <label for="item28" class="item-txt">재무기획</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">재무기획</span>
-                                                    </button> -->
+
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item29" class="blind">
                                                     <label for="item29" class="item-txt">회계</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">회계</span>
-                                                    </button> -->
+                           
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item30" class="blind">
                                                     <label for="item30" class="item-txt">세무</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">세무</span>
-                                                    </button> -->
+                                                 
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item31" class="blind">
                                                     <label for="item31" class="item-txt">자금</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">자금</span>
-                                                    </button> -->
+                                                
                                                 </li>
                                             </ul>
                                         </li>
@@ -660,23 +562,17 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item32" class="blind">
                                                     <label for="item32" class="item-txt">소싱</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">소싱</span>
-                                                    </button> -->
+                                                
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item33" class="blind">
                                                     <label for="item33" class="item-txt">운영관리</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">운영관리</span>
-                                                    </button> -->
+                                            
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item34" class="blind">
                                                     <label for="item34" class="item-txt">빌링</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">빌링</span>
-                                                    </button> -->
+                               
                                                 </li>
                                             </ul>
                                         </li>
@@ -690,23 +586,17 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item35" class="blind">
                                                     <label for="item35" class="item-txt">투자</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">투자</span>
-                                                    </button> -->
+                                      
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item36" class="blind">
                                                     <label for="item36" class="item-txt">Investor Relations</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Investor Relations</span>
-                                                    </button> -->
+                                          
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item37" class="blind">
                                                     <label for="item37" class="item-txt">Corporate Strategy</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Corporate Strategy</span>
-                                                    </button> -->
+                                              
                                                 </li>
                                             </ul>
                                         </li>
@@ -720,23 +610,17 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item38" class="blind">
                                                     <label for="item38" class="item-txt">Risk Management</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Risk Management</span>
-                                                    </button> -->
+         
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item39" class="blind">
                                                     <label for="item39" class="item-txt">ESG</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">ESG</span>
-                                                    </button> -->
+                                           
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item40" class="blind">
                                                     <label for="item40" class="item-txt">내부감사</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">내부감사</span>
-                                                    </button> -->
+                                                   
                                                 </li>
                                             </ul>
                                         </li>
@@ -750,16 +634,12 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item41" class="blind">
                                                     <label for="item41" class="item-txt">법무</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">법무</span>
-                                                    </button> -->
+                                                  
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item42" class="blind">
                                                     <label for="item42" class="item-txt">지식재산</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">지식재산</span>
-                                                    </button> -->
+                                               
                                                 </li>
                                             </ul>
                                         </li>
@@ -773,16 +653,12 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item43" class="blind">
                                                     <label for="item43" class="item-txt">개인정보보호</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">개인정보보호</span>
-                                                    </button> -->
+                                                 
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item44" class="blind">
                                                     <label for="item44" class="item-txt">통신비밀보호</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">통신비밀보호</span>
-                                                    </button> -->
+                                                  
                                                 </li>
                                             </ul>
                                         </li>
@@ -796,23 +672,16 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item45" class="blind">
                                                     <label for="item45" class="item-txt">Strategic Communication</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Strategic Communication</span>
-                                                    </button> -->
+                                                 
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item46" class="blind">
                                                     <label for="item46" class="item-txt">산업및정책연구</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">산업및정책연구</span>
-                                                    </button> -->
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item47" class="blind">
                                                     <label for="item47" class="item-txt">Corporate Experience</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Corporate Experience</span>
-                                                    </button> -->
+                             
                                                 </li>
                                             </ul>
                                         </li>
@@ -826,23 +695,17 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item48" class="blind">
                                                     <label for="item48" class="item-txt">Human Resources</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Human Resources</span>
-                                                    </button> -->
+                                                  
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item49" class="blind">
                                                     <label for="item49" class="item-txt">Employee Relations</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Employee Relations</span>
-                                                    </button> -->
+                                                 
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item50" class="blind">
                                                     <label for="item50" class="item-txt">Talent Acquisition</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Talent Acquisition</span>
-                                                    </button> -->
+                                                  
                                                 </li>
                                             </ul>
                                         </li>
@@ -856,44 +719,32 @@
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item51" class="blind">
                                                     <label for="item51" class="item-txt">채용운영</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">채용운영</span>
-                                                    </button> -->
+                                                   
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item52" class="blind">
                                                     <label for="item52" class="item-txt">통번역</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">통번역</span>
-                                                    </button> -->
+                                          
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item53" class="blind">
                                                     <label for="item53" class="item-txt">채용운영</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">비서</span>
-                                                    </button> -->
+                                                
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item54" class="blind">
                                                     <label for="item54" class="item-txt">기사</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">기사</span>
-                                                    </button> -->
+                                              
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item55" class="blind">
                                                     <label for="item55" class="item-txt">Health Care</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">Health Care</span>
-                                                    </button> -->
+                                              
                                                 </li>
                                                 <li class="sub-item">
                                                     <input type="checkbox" name="jobData" id="item56" class="blind">
                                                     <label for="item56" class="item-txt">근로지원</label>
-                                                    <!-- <button class="btn-select">
-                                                        <span class="select-txt">근로지원</span>
-                                                    </button> -->
+                                            
                                                 </li>
                                             </ul>
                                         </li>
@@ -909,23 +760,17 @@
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item57" class="blind">
                                     <label for="item57" class="item-txt">정규</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">정규</span>
-                                    </button> -->
+                                  
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item58" class="blind">
                                     <label for="item58" class="item-txt">계약</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">계약</span>
-                                    </button> -->
+                               
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item59" class="blind">
                                     <label for="item59" class="item-txt">인턴</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">인턴</span>
-                                    </button> -->
+                                   
                                 </li>
                             </ul>
                         </div>
@@ -937,23 +782,17 @@
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item60" class="blind">
                                     <label for="item60" class="item-txt">신입</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">신입</span>
-                                    </button> -->
+                                 
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item61" class="blind">
                                     <label for="item61" class="item-txt">경력</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">경력</span>
-                                    </button> -->
+                                  
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item62" class="blind">
                                     <label for="item62" class="item-txt">무관</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">무관</span>
-                                    </button> -->
+                                  
                                 </li>
                             </ul>
                         </div>
@@ -965,37 +804,27 @@
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item63" class="blind">
                                     <label for="item63" class="item-txt">분당</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">분당</span>
-                                    </button> -->
+                                   
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item64" class="blind">
                                     <label for="item64" class="item-txt">서울</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">서울</span>
-                                    </button> -->
+                              
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item65" class="blind">
                                     <label for="item65" class="item-txt">춘천</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">춘천</span>
-                                    </button> -->
+                                   
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item66" class="blind">
                                     <label for="item66" class="item-txt">세종</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">세종</span>
-                                    </button> -->
+                                    
                                 </li>
                                 <li class="sub-item">
                                     <input type="checkbox" name="jobData" id="item67" class="blind">
                                     <label for="item67" class="item-txt">도쿄(일본)</label>
-                                    <!-- <button class="btn-select">
-                                        <span class="select-txt">도쿄(일본)</span>
-                                    </button> -->
+                                  
                                 </li>
                             </ul>
                         </div>
@@ -1010,7 +839,7 @@
                     <a href="" class="team-box">
                         <div class="inner1">
                             <div class="item-title">
-                                <h3 class="title">Tech</h3> <!-- 순차적 제목 strong or h3 -->
+                                <h3 class="title">Tech</h3>
                                 <span class="number">7</span>
                             </div>
                             <p class="desc">다가오는 미래를 구현합니다</p>
@@ -1064,10 +893,9 @@
                 <div class="title-wrap">
                     <h2 class="main-title">People</h2>
                     <p class="mid-title">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
-                    <a href="" class="link-more">Learn more</a><!-- a태그 하나로 -->
+                    <a href="" class="link-more">Learn more</a>
                 </div>
                 <div class="swiper midslide">
-                    <!-- <h2 class="blind">동료소개</h2> -->
                     <ul class="swiper-wrapper slide-wrap">
                         <li class="swiper-slide">
                             <a href="" class="slide-box">
@@ -1263,11 +1091,10 @@
             <div class="inner1">
                 <div class="title-wrap">
                     <h2 class="main-title">Benefits</h2>
-                    <p class="mid-title">네이버의 일하는 문화는 계속 진화합니다</p><!-- 수정 p -->
+                    <p class="mid-title">네이버의 일하는 문화는 계속 진화합니다</p>
                     <a href="" class="link-more">Learn more</a>
                 </div>
                 <div class="swiper mySwiper lastslide">
-                    <!-- <h2 class="blind">네이버 복지문화</h2> -->
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="" class="slide-box">
