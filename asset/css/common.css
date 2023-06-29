@@ -7,13 +7,6 @@ body{
 body.active{
     overflow: hidden;
 }
-/* .inner{
-    height: 64px;
-    max-width: 1920px;
-     width: 1920px;
-    padding: 0 104px 0 98px;
-    margin: 0 auto;
-} */
 .inner{
     max-width: 1200px;
     margin: 0 auto;
@@ -74,7 +67,7 @@ footer .tab-area .button::after,
 .header .util-area .link-util .ic-linkArrow
 {
     background: url(../imges/icon/sp_pc.png) no-repeat;
-    background-size: 328px 205px; /* 2배 줄인 사이즈 */
+    background-size: 328px 205px;
 }
 
 
@@ -95,7 +88,6 @@ footer .tab-area .button::after,
 
 
 @media screen and (max-width: 1100px) {
-    /* *1024을 기준으로 화면을 보고 잡아야함 */
     .header .logo a,
     .header .btn-menu,
     .header .btn-menu.btn-close,
@@ -106,12 +98,6 @@ footer .tab-area .button::after,
     }
 }
 
-@media screen and (max-width: 1023px) {
-    /* *768을보고 잡아야함 */
-  
-}
+@media screen and (max-width: 1023px) {}
 
-@media screen and (max-width: 767px) {
-    /* *320을 보고 잡아야함 */
-  
-}
+@media screen and (max-width: 767px) {}
